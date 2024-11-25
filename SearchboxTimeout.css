@@ -1,0 +1,45 @@
+
+.SearchBoxContainer {
+    background-color: #ededed;
+    padding-bottom: 3px;
+    width: 100%;
+}
+.SearchBoxContainerAnimated {
+    animation: mymove 1.1s;
+    animation-timing-function: linear;
+    background-color: rgb(8, 116, 205);
+    padding-bottom: 3px;
+    width: 0px;
+}
+@keyframes mymove {
+    from {width: 0px;}
+    to {width: 100%;}
+  }
+
+.SearchBoxInput:focus {
+    outline: none;
+    border:solid #ededed 1px;
+}
+.SearchBoxInput {
+    border:solid #ededed 1px;
+    height: 2.5rem;
+    padding-left:0.5rem;
+    width: 100%;
+}
+
+.InputContainer {
+    position: relative;
+  }
+  
+  .ClearButton {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #888;
+  }
+  
