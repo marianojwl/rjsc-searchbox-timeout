@@ -6,7 +6,7 @@ const SearchboxTimeout = ({
   setValue,
   placeholder = 'Buscar...',
   readOnly = false,
-  delay = 1100,
+  delay = 900,
 }) => {
   const [searchQuery, setSearchQuery] = useState(value);
   const [timeoutId, setTimeoutId] = useState(null);
