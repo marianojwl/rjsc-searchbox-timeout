@@ -7,6 +7,7 @@ const SearchboxTimeout = ({
   placeholder = 'Buscar...',
   readOnly = false,
   delay = 900,
+  autoFocus=true
 }) => {
   const [searchQuery, setSearchQuery] = useState(value);
   const [timeoutId, setTimeoutId] = useState(null);
@@ -36,7 +37,8 @@ const SearchboxTimeout = ({
 
   // Focus on the input when the component mounts
   useEffect(() => {
-    document.querySelector('.ImageBarMenuSearchInput').focus();
+    if (autoFocus)
+      document.querySelector('.ImageBarMenuSearchInput').focus();
   }, []);
 
   // Handle delayed search trigger
